@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea Shop</title>
+  <link rel="stylesheet" href="Style.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="Scripts.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="inner-width">
+      <div class="navbar-menu">
+      <a href="#" class="logo"><i class="fas fa-leaf"></i></a>
+      <a href="Hompage.html"class="link">Home</a>
+      <a href="menu.html"class="link">Menu</a>
+      <a href="#about"class="link">About</a>
+      <a href="#contact"class="link">Contact us</a>
+      <a href="login page.html"class="link">Sign in</a>
+      </div>
+    </div>
+  </nav>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="a.jpg" style="width: 100%;">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="b.jpg" style="width: 100%;">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="c.jpg" style="width: 100%;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="d.jpg" style="width: 100%;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="e.jpg" style="width: 100%;">
+    </div>
+    
+    </div>
+  
+    <div style="text-align: center;">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000);
+    }
+    </script>
+<section id="home">
+  <div class="inner-width">
+    <div class="content">
+      <h1><span>T</span>ea<br>Sho<span>p</span></h1>
+      <p>A Place to talk</p>
+    </div>
+  </div>
+</section>
+<section id="about">
+  <div class="container">
+    <h1><span>o</span>rganically source<span>d</span></h1>
+    <p>We believe tea is endlessly engaging, brings people together, provides a sense of peace and well-being, and grants of a moment to yourself when you most need it. Great tea touches upon art, defines a sense of culture, marks a ritual, and offers a sense of connoisseurship. But a truly remarkable cup of tea is one which enhances the everyday.</p>
+  </div>
+</section>
+<section id="contact">
+  <div class="contact">
+    <h1><span>contact us</span></h1>
+    <div class="container-items">
+      <div class="items">
+        <div class="item">
+          <input type="text" placeholder="Your Name">
+        </div>
+        <div class="item">
+          <input type="text" placeholder="Your Email">
+        </div>
+        <div class="item">
+          <textarea placeholder="Message"></textarea>
+          <a href="#" class="button"><button>send</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="row">
+    <div class="cl">
+      <div class="copyright">
+        <a class="logo-footer"><i class="fas fa-leaf"></i></a>
+        <p>Copyright © 2017 by TEA SHOP. All rights reserved.</p>
+      </div>
+    </div>
+    <div class="cl">
+      <div class="address">A-44, Decora city, Gondal<br>Gujarat INDIA</div>
+      <div class="s-m">
+        <a><i class="fab fa-google"></i></a>
+        <a><i class="fab fa-whatsapp"></i></a>
+        <a><i class="fab fa-instagram"></i></a>
+        <a><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
